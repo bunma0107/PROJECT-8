@@ -1,5 +1,22 @@
 # PROJECT-8
 
+Configure Apache As A Load Balancer
+#Install apache2
+sudo apt update
+sudo apt install apache2 -y
+sudo apt-get install libxml2-dev
+
+#Enable following modules:
+sudo a2enmod rewrite
+sudo a2enmod proxy
+sudo a2enmod proxy_balancer
+sudo a2enmod proxy_http
+sudo a2enmod headers
+sudo a2enmod lbmethod_bytraffic
+
+#Restart apache2 service
+sudo systemctl restart apache2
+
 Configure load balancing
 ![image](https://user-images.githubusercontent.com/113097621/217114598-58ec7d45-2856-4aea-b217-736f60d6a818.png)
 ![image](https://user-images.githubusercontent.com/113097621/217114703-aed4352d-18c4-4e74-8a10-4d028b797992.png)
