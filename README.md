@@ -2,6 +2,8 @@
 
 Configure Apache As A Load Balancer
 
+Create an Ubuntu Server 20.04 EC2 instance
+
 
 Configure load balancing
 
